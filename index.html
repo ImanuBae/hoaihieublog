@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imanu's Lab - Blog Tech & Art Flow</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Imanu's Lab</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button id="user-btn">👤</button>
+                <button id="search-btn">🔍</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-image">
+            <img src="image/Avt.jpg" alt="Profile Photo">
+        </div>
+        <div class="hero-content">
+            <h1>Chào bạn,</h1>
+            <p>Mình là <strong>Hoài Hiếu</strong>, sinh viên công nghệ thông tin.</p>
+            <p>Mình đam mê lập trình và muốn chia sẻ kiến thức về <strong>Java</strong> và <strong>JavaScript</strong> - hai ngôn ngữ lập trình mạnh mẽ và phổ biến nhất hiện nay.</p>
+            <p>Blog này được tạo ra nhằm mục đích chia sẻ kinh nghiệm học tập, những mẹo hay, và các bài hướng dẫn chi tiết về lập trình mạng với Java & JavaScript.</p>
+            <p>Nếu bạn có câu hỏi hoặc muốn trao đổi về lập trình, hãy <a href="#contact">liên hệ với tôi</a> nhé!</p>
+            
+            <div class="social-buttons">
+                <a href="#blog" class="btn btn-primary">Khám Phá Blog</a>
+                <a href="#" class="btn-social btn-facebook">f</a>
+                <a href="#" class="btn-social btn-group">👥</a>
+                <a href="#" class="btn-social btn-youtube">▶</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <h2>Về Tôi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Lịch Sử Lập Trình Của Tôi</h3>
+                    <p>Tôi bắt đầu học lập trình từ năm thứ nhất đại học với Java. Qua các khoá học, tôi đã nắm vững các khái niệm cơ bản về OOP, Collections, Streams, và Multithreading trong Java.</p>
+                    <p>Sau đó, tôi tiếp tục học JavaScript để phát triển front-end. Tôi đã học được DOM manipulation, Event handling, Async/Await, Promise, và các framework như React.</p>
+                    <p>Với sự kết hợp của cả hai ngôn ngữ này, tôi có thể xây dựng các ứng dụng web đầy đủ từ backend (Java) đến frontend (JavaScript).</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h4>2+ Năm</h4>
+                        <p>Kinh Nghiệm Lập Trình</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>20+ Dự Án</h4>
+                        <p>Đã Hoàn Thành</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>100+ Bài Viết</h4>
+                        <p>Chia Sẻ Kiến Thức</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <div class="skills-container">
+            <h2>Kỹ Năng Chính</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">☕</div>
+                    <h3>Java Core</h3>
+                    <p>OOP, Collections, Streams, Lambda Expressions, Exception Handling</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🖥️</div>
+                    <h3>Java Web</h3>
+                    <p>Servlet, JSP, Spring Boot, JPA/Hibernate, RESTful API</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Java Network</h3>
+                    <p>Socket Programming, TCP/UDP, HTTP Client, Network Security</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📱</div>
+                    <h3>JavaScript ES6+</h3>
+                    <p>DOM, Event Handling, Async/Await, Promise, Callback</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>React</h3>
+                    <p>Components, Hooks, State Management, JSX</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, Responsive Design, API Integration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-section" id="blog">
+        <div class="blog-container">
+            <h2>Tất Cả Bài Viết</h2>
+            <p class="blog-intro">Khám phá các bài hướng dẫn chi tiết về Java và JavaScript lập trình mạng</p>
+            
+            <div class="blog-filters">
+                <button class="filter-btn active" data-filter="all">Tất Cả</button>
+                <button class="filter-btn" data-filter="java">Java</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+            </div>
+            
+            <div class="blog-grid" id="blog-container">
+                </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2>Liên Hệ Với Tôi</h2>
+            <p class="contact-intro">Bạn có câu hỏi về lập trình? Hãy gửi tin nhắn cho tôi!</p>
+            <form id="contact-form">
+                <div class="form-row">
+                    <input type="text" id="name" placeholder="Tên của bạn" required>
+                    <input type="email" id="email" placeholder="Email của bạn" required>
+                </div>
+                <input type="text" id="subject" placeholder="Tiêu đề tin nhắn" required>
+                <textarea id="message" rows="5" placeholder="Nội dung tin nhắn của bạn..." required></textarea>
+                <button type="submit" class="btn btn-primary btn-full">Gửi Tin Nhắn</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="logo">Hiếu's Programming</div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon btn-facebook">f</a>
+                    <a href="#" class="social-icon btn-group">👥</a>
+                    <a href="#" class="social-icon btn-youtube">▶</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Liên Kết Nhanh</h3>
+                <ul>
+                    <li><a href="#home">Trang Chủ</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Thông Tin Liên Hệ</h3>
+                <p><strong>Email:</strong></p>
+                <p><a href="mailto:21052005h@gmail.com">21052005h@gmail.com</a></p>
+                <p><strong>Địa Chỉ:</strong></p>
+                <p>Hồ Chí Minh, Việt Nam</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Imanu's Lab - Blog Tech & Art Flow . All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
