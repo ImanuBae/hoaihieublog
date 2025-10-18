@@ -943,3 +943,7 @@ footer {
     line-height: 1.6;
     margin-bottom: 0.25rem;
 }
+
+.btn-discord {
+    background: #5865F2; /* Màu chính thức của Discord */
+}
