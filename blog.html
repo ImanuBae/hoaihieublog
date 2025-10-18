@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Imanu's Lab</title> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Imanu's Lab</div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Trang Chủ</a></li> <li><a href="index.html#about">Giới Thiệu</a></li> <li><a href="blog.html">Blog</a></li> <li><a href="index.html#contact">Liên Hệ</a></li> </ul>
+            <div class="nav-icons">
+                <button id="user-btn">👤</button>
+                <button id="search-btn">🔍</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="blog-section" id="blog" style="padding-top: 4rem;"> <div class="blog-container">
+            <h2>Tất Cả Bài Viết</h2>
+            <p class="blog-intro">Khám phá các bài hướng dẫn chi tiết về Java và JavaScript lập trình mạng</p>
+            
+            <div class="blog-filters">
+                <button class="filter-btn active" data-filter="all">Tất Cả</button>
+                <button class="filter-btn" data-filter="java">Java</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                <button class="filter-btn" data-filter="certificates">Chứng chỉ</button> </div>
+            </div>
+            
+            <div class="blog-grid" id="blog-container">
+                </div>
+            <div id="certificates-container" class="certificates-grid" style="display: none;">
+                <div class="certificate-card">
+                    <img src="image/img10.jpg" alt="JavaScript Essentials 2 Certificate">
+                    <div class="certificate-info">
+                        <h4>JavaScript Essentials 2</h4>
+                        <p><strong>Cấp bởi:</strong> Cisco Networking Academy & OpenEDG</p>
+                        <p><strong>Ngày cấp:</strong> 16/10/2025</p>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <img src="image/img11.jpg" alt="Networking Basics Certificate">
+                    <div class="certificate-info">
+                        <h4>Networking Basics</h4>
+                        <p><strong>Cấp bởi:</strong> Cisco Networking Academy</p>
+                        <p><strong>Ngày cấp:</strong> 02/10/2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>    
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="logo">Imanu's Lab</div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/imanutetsuya/" class="social-icon btn-facebook" target="_blank" rel="noopener noreferrer">f</a>
+                    <a href="#" class="social-icon btn-group">👥</a>
+                    <a href="#" class="social-icon btn-youtube">▶</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Liên Kết Nhanh</h3>
+                <ul>
+                    <li><a href="index.html#home">Trang Chủ</a></li> <li><a href="blog.html">Blog</a></li> </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Thông Tin Liên Hệ</h3>
+                <p><strong>Email:</strong></p>
+                <p><a href="mailto:21052005h@gmail.com">21052005h@gmail.com</a></p>
+                <p><strong>Địa Chỉ:</strong></p>
+                <p>Ký túc xá khu B ĐHQG, Tp. Hồ Chí Minh</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Imanu's Lab - Blog Tech & Art Flow. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="blog.js"></script> </body>
+</html>
