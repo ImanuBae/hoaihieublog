@@ -993,12 +993,38 @@ function initializeFilters() {
 }
 
 function filterPosts(category) {
-    const cards = document.querySelectorAll('#blog-container .blog-card');
-    cards.forEach(card => {
+    const blogContainer = document.getElementById('blog-container');
+    const certificatesContainer = document.getElementById('certificates-container');
+    const blogCards = blogContainer.querySelectorAll('.blog-card');
+
+    // --- BẮT ĐẦU SỬA ---
+
+    // 1. Điều khiển việc hiển thị của các container chính
+    if (category === 'all') {
+        // Nếu là 'Tất Cả', hiển thị CẢ blog VÀ chứng chỉ
+        blogContainer.style.display = 'grid';
+        certificatesContainer.style.display = 'grid';
+    } else if (category === 'certificates') {
+        // Nếu là 'Chứng chỉ', chỉ hiển thị chứng chỉ
+        blogContainer.style.display = 'none';
+        certificatesContainer.style.display = 'grid';
+    } else {
+        // Nếu là 'Java' hoặc 'JavaScript', chỉ hiển thị blog
+        blogContainer.style.display = 'grid';
+        certificatesContainer.style.display = 'none';
+    }
+
+    // 2. Lọc các thẻ bài viết blog bên trong blogContainer
+    // Logic này vẫn chạy đúng cho mọi trường hợp
+    blogCards.forEach(card => {
         const cardCategory = card.getAttribute('data-category');
         if (category === 'all' || cardCategory === category) {
+            // Hiển thị thẻ nếu:
+            // 1. Đang chọn 'Tất Cả'
+            // 2. Thẻ có category trùng với category đang chọn
             card.style.display = 'block';
         } else {
+            // Ẩn thẻ đi
             card.style.display = 'none';
         }
     });
